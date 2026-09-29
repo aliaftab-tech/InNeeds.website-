@@ -531,7 +531,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 flex justify-center">
-            <Link href="/campaigns" className="md:hidden inline-flex items-center gap-2 font-bold text-emerald-600 border-2 border-emerald-100 bg-emerald-50 px-8 py-4 rounded-full">
+            <Link href="/campaigns" className="md:hidden flex items-center gap-2 bg-slate-900 text-white px-8 py-3.5 rounded-full font-extrabold hover:bg-emerald-700 transition-colors shadow-xl hover:shadow-2xl">
               View all campaigns <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
@@ -542,10 +542,10 @@ export default function Home() {
       {/* BOTTOM CARDS SECTION */}
       <section className="py-24 bg-white w-full overflow-hidden">
         {/* CARDS CONTAINER */}
-        <div className="relative z-10 mx-auto mt-20 flex flex-col xl:flex-row items-end justify-center gap-6 w-full max-w-[1800px] px-4 md:px-8 xl:px-12 pb-12 overflow-x-auto xl:overflow-visible">
+        <div className="relative z-10 mx-auto mt-20 flex flex-row items-end justify-start xl:justify-center gap-4 md:gap-6 w-full max-w-[1800px] px-4 md:px-8 xl:px-12 pb-12 overflow-x-auto xl:overflow-visible snap-x snap-mandatory">
 
           {/* FAR LEFT STACK */}
-          <div className="flex flex-col gap-6 shrink-0 w-[260px] xl:w-[280px] 2xl:w-[320px] mx-auto xl:mx-0">
+          <div className="flex flex-col gap-6 shrink-0 w-[260px] xl:w-[280px] 2xl:w-[320px] mx-auto xl:mx-0 snap-center">
             {/* Top Dark Green */}
             <div className="relative aspect-[4/5] bg-[#0d472c] rounded-[2rem] rounded-tr-[4rem] p-6 2xl:p-8 flex flex-col justify-between text-white shadow-xl">
               <div>
@@ -570,7 +570,7 @@ export default function Home() {
           </div>
 
           {/* LEFT TALL BOX */}
-          <div className="relative w-[280px] xl:w-[320px] 2xl:w-[360px] aspect-[9/12] bg-slate-200 rounded-[2.5rem] rounded-tl-[4rem] overflow-hidden shadow-2xl shrink-0 p-8 flex flex-col justify-end text-white mx-auto xl:mx-0">
+          <div className="relative w-[280px] xl:w-[320px] 2xl:w-[360px] aspect-[9/12] bg-slate-200 rounded-[2.5rem] rounded-tl-[4rem] overflow-hidden shadow-2xl shrink-0 p-8 flex flex-col justify-end text-white mx-auto xl:mx-0 snap-center">
             <img src="/student.jpg" alt="Student studying" className="absolute inset-0 w-full h-full object-cover z-0" />
             <div className="absolute inset-0 bg-black/20 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"></div>
             <div className="relative z-20">
@@ -580,7 +580,7 @@ export default function Home() {
           </div>
 
           {/* CENTER BOX */}
-          <div className="relative w-[240px] xl:w-[280px] 2xl:w-[320px] aspect-[1/1.05] bg-[#dce3de] rounded-[3rem] shadow-2xl shrink-0 p-8 2xl:p-10 flex flex-col justify-end mx-auto xl:mx-0 mt-16 xl:mt-0">
+          <div className="relative w-[240px] xl:w-[280px] 2xl:w-[320px] aspect-[1/1.05] bg-[#dce3de] rounded-[3rem] shadow-2xl shrink-0 p-8 2xl:p-10 flex flex-col justify-end mx-auto xl:mx-0 mt-16 xl:mt-0 snap-center">
             <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 2xl:w-28 2xl:h-28 bg-white rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(0,0,0,0.1)] cursor-pointer hover:scale-105 transition-transform z-20 group">
               <svg className="w-8 h-8 2xl:w-10 2xl:h-10 text-slate-800 ml-2 group-hover:text-emerald-600 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
             </div>
@@ -595,7 +595,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT TALL BOX */}
-          <div className="relative w-[280px] xl:w-[320px] 2xl:w-[360px] aspect-[9/12] bg-slate-200 rounded-[2.5rem] rounded-tl-[4rem] overflow-hidden shadow-2xl shrink-0 p-8 flex flex-col justify-end text-white mx-auto xl:mx-0">
+          <div className="relative w-[280px] xl:w-[320px] 2xl:w-[360px] aspect-[9/12] bg-slate-200 rounded-[2.5rem] rounded-tl-[4rem] overflow-hidden shadow-2xl shrink-0 p-8 flex flex-col justify-end text-white mx-auto xl:mx-0 snap-center">
             <img src="/emergency.jpg" alt="Emergency assistance" className="absolute inset-0 w-full h-full object-cover z-0" />
             <div className="absolute inset-0 bg-black/20 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"></div>
             <div className="relative z-20">
@@ -605,7 +605,7 @@ export default function Home() {
           </div>
 
           {/* FAR RIGHT STACK */}
-          <div className="flex flex-col gap-6 shrink-0 w-[260px] xl:w-[280px] 2xl:w-[320px] mx-auto xl:mx-0">
+          <div className="flex flex-col gap-6 shrink-0 w-[260px] xl:w-[280px] 2xl:w-[320px] mx-auto xl:mx-0 snap-center">
             {/* Top Light Green */}
             <div className="relative aspect-[4/5] bg-[#c0f058] rounded-[2rem] rounded-tl-[4rem] overflow-hidden shadow-xl p-6 2xl:p-8 flex flex-col justify-between">
               <img src="/hands.jpg" alt="Hands reaching" className="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-[0.85] z-0 grayscale" />
