@@ -223,7 +223,7 @@ export default function Home() {
       </section>
 
       {/* REMAINDER OF THE PAGE (TRUST / IMPACT SECTION) */}
-      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 bg-[#0a5228] flex flex-col items-center justify-center text-center px-6">
+      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 bg-[#0b291a] flex flex-col items-center justify-center text-center px-6">
         {/* Badge */}
         <div className="inline-block bg-white/10 text-emerald-100 border border-white/10 font-extrabold text-xs px-4 py-1.5 rounded-sm mb-6 uppercase tracking-wider backdrop-blur-sm">
           100% Verified Causes
