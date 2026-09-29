@@ -1,5 +1,5 @@
 const sharp = require('sharp');
-const path = require('path');
+const path = require('node:path');
 
 async function generateRoundedFavicon() {
   const inputPath = path.join(__dirname, 'public', 'transparent.png');
