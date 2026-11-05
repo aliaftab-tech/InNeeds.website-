@@ -10,116 +10,121 @@ import {
 
 export default function HowItWorks() {
   return (
-    <section className="py-14 sm:py-16 md:py-20 bg-[#F6F3EB] border-t border-[#E8E2D5] relative overflow-hidden" id="how-it-works">
+    <section className="py-12 sm:py-16 md:py-20 bg-[#f6f9f6] border-y border-[#e2eae3] relative overflow-hidden" id="how-it-works">
       
-      {/* ================= FLOATING RETRO STICKER BADGES ================= */}
+      {/* ================= HERO BANNER CONTAINER WITH RESPONSIVE SIDES BADGES ================= */}
+      <div className="relative max-w-5xl mx-auto px-12 sm:px-16 md:px-20 text-center z-10 pt-2 pb-4">
 
-      {/* 1. TOP-LEFT BADGE: "CHANGE THE WORLD" */}
-      <div className="absolute top-4 left-4 sm:top-8 sm:left-8 lg:top-10 lg:left-12 hidden sm:block rotate-[-10deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
-        <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-[#1b3b27] border-2 border-[#32a338] p-1 flex items-center justify-center relative shadow-md">
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <path id="curve-tl" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
-            <text className="text-[7.5px] font-black fill-emerald-200 uppercase tracking-[0.18em]">
-              <textPath href="#curve-tl" startOffset="50%" textAnchor="middle">
-                Change The World
-              </textPath>
-            </text>
-            <circle cx="50" cy="42" r="11" fill="#f97316" />
-            <polygon points="25,75 50,48 75,75" fill="#0f2618" />
-            <polygon points="45,75 62,56 80,75" fill="#143320" />
-            <polygon points="42,57 50,48 58,57 54,60 50,58 46,60" fill="#ffffff" opacity="0.9" />
-          </svg>
+        {/* --- LEFT BADGES (VISIBLE ON MOBILE & DESKTOP) --- */}
+
+        {/* 1. TOP-LEFT BADGE: "CHANGE THE WORLD" */}
+        <div className="absolute top-1 left-0 sm:left-2 md:left-4 rotate-[-10deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
+          <div className="w-11 h-11 sm:w-14 sm:h-14 md:w-18 md:h-18 lg:w-22 lg:h-22 rounded-full bg-[#1b3b27] border-[1.5px] sm:border-2 border-[#32a338] p-0.5 sm:p-1 flex items-center justify-center relative shadow-md">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <path id="curve-tl" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
+              <text className="text-[7.5px] font-black fill-emerald-200 uppercase tracking-[0.18em]">
+                <textPath href="#curve-tl" startOffset="50%" textAnchor="middle">
+                  Change The World
+                </textPath>
+              </text>
+              <circle cx="50" cy="42" r="11" fill="#f97316" />
+              <polygon points="25,75 50,48 75,75" fill="#0f2618" />
+              <polygon points="45,75 62,56 80,75" fill="#143320" />
+              <polygon points="42,57 50,48 58,57 54,60 50,58 46,60" fill="#ffffff" opacity="0.9" />
+            </svg>
+          </div>
         </div>
-      </div>
 
-      {/* 2. BOTTOM-LEFT BADGE: "PUT PEOPLE FIRST" */}
-      <div className="absolute top-52 left-4 sm:left-8 lg:left-12 hidden md:block rotate-[12deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
-        <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 rounded-full bg-[#1c221e] border-2 border-[#eab308] p-1 flex items-center justify-center relative shadow-md">
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <path id="curve-bl" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
-            <text className="text-[7px] font-black fill-amber-300 uppercase tracking-[0.2em]">
-              <textPath href="#curve-bl" startOffset="50%" textAnchor="middle">
-                Put People First
-              </textPath>
-            </text>
-            <circle cx="50" cy="56" r="22" fill="#facc15" />
-            <path d="M 32 75 C 32 68 40 64 50 64 C 60 64 68 68 68 75 Z" fill="#141815" />
-            <polygon points="48,58 50,48 52,58" fill="#141815" />
-            <polygon points="44,61 46,52 48,61" fill="#141815" />
-            <polygon points="52,61 54,52 56,61" fill="#141815" />
-          </svg>
+        {/* 2. BOTTOM-LEFT BADGE: "PUT PEOPLE FIRST" */}
+        <div className="absolute bottom-2 left-0 sm:left-2 md:left-4 rotate-[12deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
+          <div className="w-11 h-11 sm:w-14 sm:h-14 md:w-18 md:h-18 lg:w-22 lg:h-22 rounded-full bg-[#1c221e] border-[1.5px] sm:border-2 border-[#eab308] p-0.5 sm:p-1 flex items-center justify-center relative shadow-md">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <path id="curve-bl" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
+              <text className="text-[7px] font-black fill-amber-300 uppercase tracking-[0.2em]">
+                <textPath href="#curve-bl" startOffset="50%" textAnchor="middle">
+                  Put People First
+                </textPath>
+              </text>
+              <circle cx="50" cy="56" r="22" fill="#facc15" />
+              <path d="M 32 75 C 32 68 40 64 50 64 C 60 64 68 68 68 75 Z" fill="#141815" />
+              <polygon points="48,58 50,48 52,58" fill="#141815" />
+              <polygon points="44,61 46,52 48,61" fill="#141815" />
+              <polygon points="52,61 54,52 56,61" fill="#141815" />
+            </svg>
+          </div>
         </div>
-      </div>
 
-      {/* 3. TOP-RIGHT BADGE: "TRANSPARENT GIVING" */}
-      <div className="absolute top-4 right-4 sm:top-8 sm:right-8 lg:top-10 lg:right-12 hidden sm:block rotate-[14deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
-        <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-[#13302b] border-2 border-[#38bdf8] p-1 flex items-center justify-center relative shadow-md">
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <path id="curve-tr" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
-            <text className="text-[7px] font-black fill-sky-200 uppercase tracking-[0.18em]">
-              <textPath href="#curve-tr" startOffset="50%" textAnchor="middle">
-                Transparent Giving
-              </textPath>
-            </text>
-            <path d="M 35 72 L 40 56 Q 50 54 60 56 L 65 72 Q 50 75 35 72 Z" fill="#d97706" />
-            <ellipse cx="50" cy="56" rx="10" ry="3" fill="#f59e0b" />
-            <path d="M 50 56 Q 44 44 38 42 Q 46 44 50 56" fill="#22c55e" />
-            <path d="M 50 56 Q 56 42 62 44 Q 54 46 50 56" fill="#16a34a" />
-          </svg>
+        {/* --- RIGHT BADGES (VISIBLE ON MOBILE & DESKTOP) --- */}
+
+        {/* 3. TOP-RIGHT BADGE: "TRANSPARENT GIVING" */}
+        <div className="absolute top-1 right-0 sm:right-2 md:right-4 rotate-[14deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
+          <div className="w-11 h-11 sm:w-14 sm:h-14 md:w-18 md:h-18 lg:w-22 lg:h-22 rounded-full bg-[#13302b] border-[1.5px] sm:border-2 border-[#38bdf8] p-0.5 sm:p-1 flex items-center justify-center relative shadow-md">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <path id="curve-tr" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
+              <text className="text-[7px] font-black fill-sky-200 uppercase tracking-[0.18em]">
+                <textPath href="#curve-tr" startOffset="50%" textAnchor="middle">
+                  Transparent Giving
+                </textPath>
+              </text>
+              <path d="M 35 72 L 40 56 Q 50 54 60 56 L 65 72 Q 50 75 35 72 Z" fill="#d97706" />
+              <ellipse cx="50" cy="56" rx="10" ry="3" fill="#f59e0b" />
+              <path d="M 50 56 Q 44 44 38 42 Q 46 44 50 56" fill="#22c55e" />
+              <path d="M 50 56 Q 56 42 62 44 Q 54 46 50 56" fill="#16a34a" />
+            </svg>
+          </div>
         </div>
-      </div>
 
-      {/* 4. MIDDLE-RIGHT BADGE: "100% AUDITABLE" */}
-      <div className="absolute top-44 right-4 sm:right-6 lg:right-10 hidden md:block rotate-[-8deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
-        <div className="w-14 h-14 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-full bg-[#202720] border-2 border-[#86efac] p-1 flex items-center justify-center relative shadow-md">
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <path id="curve-mr" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
-            <text className="text-[6.5px] font-black fill-emerald-300 uppercase tracking-[0.2em]">
-              <textPath href="#curve-mr" startOffset="50%" textAnchor="middle">
-                100% Auditable
-              </textPath>
-            </text>
-            <path d="M 50 32 L 66 38 V 52 C 66 62 50 70 50 70 C 50 70 34 62 34 52 V 38 Z" fill="#15803d" />
-            <path d="M 44 50 L 48 54 L 57 44" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-          </svg>
+        {/* 4. MIDDLE-RIGHT BADGE: "100% AUDITABLE" */}
+        <div className="absolute top-1/2 -translate-y-1/2 right-0 sm:right-1 md:right-3 rotate-[-8deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
+          <div className="w-10 h-10 sm:w-13 sm:h-13 md:w-16 md:h-16 lg:w-18 lg:h-18 rounded-full bg-[#202720] border-[1.5px] sm:border-2 border-[#86efac] p-0.5 sm:p-1 flex items-center justify-center relative shadow-md">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <path id="curve-mr" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
+              <text className="text-[6.5px] font-black fill-emerald-300 uppercase tracking-[0.2em]">
+                <textPath href="#curve-mr" startOffset="50%" textAnchor="middle">
+                  100% Auditable
+                </textPath>
+              </text>
+              <path d="M 50 32 L 66 38 V 52 C 66 62 50 70 50 70 C 50 70 34 62 34 52 V 38 Z" fill="#15803d" />
+              <path d="M 44 50 L 48 54 L 57 44" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            </svg>
+          </div>
         </div>
-      </div>
 
-      {/* 5. BOTTOM-RIGHT BADGE: "WORK TOGETHER" */}
-      <div className="absolute top-72 right-4 sm:right-8 lg:right-14 hidden lg:block rotate-[8deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
-        <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 rounded-full bg-[#1f2824] border-2 border-[#f87171] p-1 flex items-center justify-center relative shadow-md">
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <path id="curve-br" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
-            <text className="text-[7.5px] font-black fill-rose-200 uppercase tracking-[0.18em]">
-              <textPath href="#curve-br" startOffset="50%" textAnchor="middle">
-                Work Together
-              </textPath>
-            </text>
-            <circle cx="42" cy="50" r="7" fill="#f87171" />
-            <circle cx="58" cy="50" r="7" fill="#38bdf8" />
-            <path d="M 32 72 Q 42 60 50 60 Q 58 60 68 72 Z" fill="#334155" />
-          </svg>
+        {/* 5. BOTTOM-RIGHT BADGE: "WORK TOGETHER" */}
+        <div className="absolute bottom-2 right-0 sm:right-2 md:right-4 rotate-[8deg] hover:rotate-0 transition-transform duration-300 drop-shadow-md select-none pointer-events-none">
+          <div className="w-11 h-11 sm:w-14 sm:h-14 md:w-18 md:h-18 lg:w-22 lg:h-22 rounded-full bg-[#1f2824] border-[1.5px] sm:border-2 border-[#f87171] p-0.5 sm:p-1 flex items-center justify-center relative shadow-md">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <path id="curve-br" d="M 15 50 A 35 35 0 0 1 85 50" fill="none" />
+              <text className="text-[7.5px] font-black fill-rose-200 uppercase tracking-[0.18em]">
+                <textPath href="#curve-br" startOffset="50%" textAnchor="middle">
+                  Work Together
+                </textPath>
+              </text>
+              <circle cx="42" cy="50" r="7" fill="#f87171" />
+              <circle cx="58" cy="50" r="7" fill="#38bdf8" />
+              <path d="M 32 72 Q 42 60 50 60 Q 58 60 68 72 Z" fill="#334155" />
+            </svg>
+          </div>
         </div>
-      </div>
 
-      {/* ================= HERO BANNER ================= */}
-      <div className="max-w-3xl mx-auto px-6 text-center relative z-10 pt-2 pb-4">
-        
-        {/* Balanced Headline */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.35rem] font-black text-[#141414] tracking-tight uppercase leading-[1.08]">
-          Fundraising on InNeeds. <br />
-          Easy, Powerful, and Trusted.
-        </h2>
+        {/* --- CENTER TEXT CONTENT --- */}
+        <div className="max-w-2xl mx-auto">
+          {/* Balanced Headline (Crisp on Mobile & Desktop) */}
+          <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-[3.25rem] font-black text-[#141414] tracking-tight uppercase leading-[1.12]">
+            Fundraising on InNeeds. <br />
+            Easy, Powerful, and Trusted.
+          </h2>
 
-        {/* Clean Subheading */}
-        <p className="mt-4 md:mt-5 text-slate-600 text-sm sm:text-base md:text-lg font-medium max-w-xl mx-auto leading-relaxed">
-          We are on a mission to make transparent giving effortless. Create your fundraiser, rally compassionate donors, and track every single dollar directly to the cause.
-        </p>
+          {/* Clean Subheading */}
+          <p className="mt-3 sm:mt-4 md:mt-5 text-slate-600 text-xs sm:text-sm md:text-base font-medium max-w-lg mx-auto leading-relaxed">
+            We are on a mission to make transparent giving effortless. Create your fundraiser, rally compassionate donors, and track every single dollar directly to the cause.
+          </p>
+        </div>
 
       </div>
 
       {/* ================= COMPACT SCROLLING 3 STEPS ================= */}
-      <div className="max-w-[1250px] mx-auto px-6 lg:px-12 mt-10 md:mt-14 pt-8 md:pt-12 border-t border-[#E8E2D5] relative z-10 space-y-8 md:space-y-12">
+      <div className="max-w-[1250px] mx-auto px-6 lg:px-12 mt-10 md:mt-14 pt-8 md:pt-12 border-t border-[#e2eae3] relative z-10 space-y-8 md:space-y-12">
 
         {/* ---------------- STEP 01: CREATE IN MINUTES ---------------- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
@@ -184,8 +189,8 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        {/* ---------------- STEP 02: REACH DONORS BY SHARING (EXACT IMAGE 2 REPLICA) ---------------- */}
-        <div className="pt-8 md:pt-10 border-t border-[#E8E2D5] grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+        {/* ---------------- STEP 02: REACH DONORS BY SHARING ---------------- */}
+        <div className="pt-8 md:pt-10 border-t border-[#e2eae3] grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
           {/* Left Column */}
           <div className="lg:col-span-5 flex flex-col justify-center">
             <div className="w-7 h-7 rounded-full bg-[#22c55e] text-slate-950 font-black text-xs flex items-center justify-center mb-3 shadow-sm">
@@ -229,7 +234,7 @@ export default function HowItWorks() {
         </div>
 
         {/* ---------------- STEP 03: SECURE TRANSFERS ---------------- */}
-        <div className="pt-8 md:pt-10 border-t border-[#E8E2D5] grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+        <div className="pt-8 md:pt-10 border-t border-[#e2eae3] grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
           {/* Left Column */}
           <div className="lg:col-span-5 flex flex-col justify-center">
             <div className="w-7 h-7 rounded-full bg-[#22c55e] text-slate-950 font-black text-xs flex items-center justify-center mb-3 shadow-sm">
