@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft, ChevronDown, Search, HeartHandshake, ShieldCheck, Target, Megaphone, Zap } from "lucide-react";
 import HeroCarousel from "../components/HeroCarousel";
 import BottomCarousel from "../components/BottomCarousel";
+import HowItWorks from "../components/HowItWorks";
 
 const CircularStat = ({ numericValue, prefix = "", suffix = "", label, percentage }: { numericValue: number, prefix?: string, suffix?: string, label: React.ReactNode, percentage: number }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -307,6 +308,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* HOW IT WORKS / FUNDRAISING ON INNEEDS */}
+      <HowItWorks />
 
       {/* 3D CAROUSEL SECTION (BOTTOM) */}
       <section className="py-24 bg-white border-t border-slate-100 overflow-x-clip" id="categories">

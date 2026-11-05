@@ -3,3 +3,16 @@
 @theme {
   --font-sans: var(--font-inter);
 }
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.anim-float-card {
+  animation: floatCard 5.5s ease-in-out infinite;
+}
