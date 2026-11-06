@@ -1,40 +1,46 @@
-## 2026-11-06T11:41:06Z
-You are teamwork_reviewer_1.
-Your working directory is: d:\InNeeds website\.agents\teamwork\teamwork_reviewer_1\
+# Task Assignment: Reviewer 1 - Code Review & Conformance Verification
 
-MANDATORY FIRST STEP:
-Read the user request file at:
-d:\InNeeds website\.agents\teamwork\ORIGINAL_REQUEST.md
+**Role**: Code Correctness & Interface Conformance Reviewer
+**Working Directory**: d:\InNeeds website\.agents\teamwork\teamwork_reviewer_1
+**Target Repository**: d:\InNeeds website
+**Reference 1**: d:\InNeeds website\.agents\teamwork\ORIGINAL_REQUEST.md
+**Reference 2**: d:\InNeeds website\.agents\teamwork\orchestrator_1\PROJECT.md
+**Reference 3**: d:\InNeeds website\.agents\teamwork\teamwork_worker_1\handoff.md
 
-Read the project specification at:
-d:\InNeeds website\.agents\teamwork\orchestrator\PROJECT.md
-
-Read the implementation handoff report at:
-d:\InNeeds website\.agents\teamwork\teamwork_worker_m1\handoff.md
-
-Read the E2E test suite handoff and test ready file at:
-- d:\InNeeds website\.agents\teamwork\teamwork_test_writer_e2e\handoff.md
-- d:\InNeeds website\TEST_READY.md
-- d:\InNeeds website\TEST_INFRA.md
-
-OBJECTIVE:
-Perform a comprehensive, independent code review and verification of the Skeleton Loading UI:
-1. Examine code in `src/components/ui/skeleton.tsx`, `src/components/skeletons/`, `src/app/loading.tsx`, and `src/app/globals.css`.
-2. Verify completeness against R1 & R2:
-   - Does `loading.tsx` exist at the root of `src/app/`?
-   - Does it render during route transitions?
-   - Does it include `NavbarSkeleton` at top?
-   - Does it omit `FooterSkeleton` to avoid duplicate footers with `src/app/layout.tsx`?
-   - Do the 9 section skeletons match the structural layout, responsive column spans, and dimensions of `src/app/page.tsx`?
-   - Are theme tokens correctly handled (dark emerald `bg-white/10` vs light `bg-slate-200/80`)?
-   - Are `animate-pulse` or shimmer animations active?
-3. Run verification commands:
-   - `node tests/run-e2e.mjs`
-   - `npx tsc --noEmit`
+## Objective
+Independently review the refactored codebase across `src/`, `public/`, `tests/`, and root configs:
+1. Verify that all 13 features in `PROJECT.md` have been implemented cleanly.
+2. Verify that `package.json` no longer contains `gsap`, and that root dead files and 28 unreferenced assets are gone.
+3. Verify that `src/data/categories.ts` is cleanly used by `HeroCarousel.tsx` and `BottomCarousel.tsx`.
+4. Verify that `BottomCarousel.tsx` types `handleDrag` with `PanInfo` without `any`.
+5. Verify that `Footer.tsx` uses `<Link>` for internal navigation.
+6. Verify that `src/app/page.tsx` is modularized into the 8 designated section components and reduced to under 50 lines.
+7. Verify that all 9 UI invariants I-1 to I-9 are intact.
+8. Execute verification commands:
+   - `npm run typecheck` (`tsc --noEmit`)
+   - `npm run lint`
    - `npm run build`
-4. Document all findings, command outputs, and your clear verdict (APPROVE or REQUEST_CHANGES).
+   - `npm run test` (`node tests/run-e2e.mjs`)
+9. Issue your verdict: `APPROVE` or `REQUEST_CHANGES` with full rationale in `handoff.md`.
 
-OUTPUT:
-- Write notes to: d:\InNeeds website\.agents\teamwork\teamwork_reviewer_1\analysis.md
-- Write final handoff report to: d:\InNeeds website\.agents\teamwork\teamwork_reviewer_1\handoff.md
-- Send completion message to orchestrator with your verdict.
+
+## 2026-11-06T15:20:52Z
+You are teamwork_reviewer assigned to Reviewer 1 (Code Correctness & Interface Conformance).
+
+Your working directory is: d:\InNeeds website\.agents\teamwork\teamwork_reviewer_1
+You MUST read:
+1. ORIGINAL_REQUEST.md: d:\InNeeds website\.agents\teamwork\ORIGINAL_REQUEST.md
+2. DISPATCH.md: d:\InNeeds website\.agents\teamwork\teamwork_reviewer_1\DISPATCH.md
+3. PROJECT.md: d:\InNeeds website\.agents\teamwork\orchestrator_1\PROJECT.md
+4. Worker 1 Handoff: d:\InNeeds website\.agents\teamwork\teamwork_worker_1\handoff.md
+
+Your task:
+- Independently review the refactored code across `src/`, `public/`, and configuration files.
+- Verify adherence to Next.js App Router standards, TypeScript types, and ESLint rules.
+- Execute:
+  1. `npm run typecheck` (`tsc --noEmit`)
+  2. `npm run lint`
+  3. `npm run build`
+  4. `npm run test` (`node tests/run-e2e.mjs`)
+- Write your comprehensive review report and issue your verdict: APPROVE or REQUEST_CHANGES in: d:\InNeeds website\.agents\teamwork\teamwork_reviewer_1\handoff.md.
+- Send a message to orchestrator (conversation ID: 20678e70-c223-4d85-b409-35ee75e0d398).

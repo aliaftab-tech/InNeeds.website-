@@ -55,7 +55,6 @@ suite.test('I1.3: Base Skeleton primitive integration with utils.ts cn()', () =>
 });
 
 suite.test('I1.4: Section skeletons consume base Skeleton primitive', () => {
-  const barrelContent = readFileContent('src/components/skeletons/index.ts');
   const heroContent = readFileContent('src/components/skeletons/HeroSectionSkeleton.tsx');
   const navbarContent = readFileContent('src/components/skeletons/NavbarSkeleton.tsx');
 
