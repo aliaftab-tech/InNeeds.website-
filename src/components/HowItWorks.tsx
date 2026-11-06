@@ -1,24 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import { 
-  ShieldCheck, 
-  Lightbulb, 
-  Pencil, 
-  Landmark 
+import {
+  ShieldCheck,
+  Lightbulb,
+  Pencil,
+  Landmark
 } from "lucide-react";
 
 export default function HowItWorks() {
   return (
     <section className="bg-[#f6f9f6] pb-12 sm:pb-16 md:pb-20 border-b border-[#e2eae3] relative overflow-hidden" id="how-it-works">
-      
+
       {/* ================= TOP DEEP DOME ARCH DIVIDER ================= */}
       <div className="w-full overflow-hidden leading-none select-none pointer-events-none -mt-px">
-        <svg 
-          viewBox="0 0 1440 100" 
-          fill="none" 
-          xmlns="http://www.w3.org/2000/svg" 
-          className="w-full h-10 sm:h-16 md:h-20 lg:h-24 block" 
+        <svg
+          viewBox="0 0 1440 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-10 sm:h-16 md:h-20 lg:h-24 block"
           preserveAspectRatio="none"
         >
           {/* White cutout from upper section (corners tilt steeply downwards) */}
@@ -160,20 +160,20 @@ export default function HowItWorks() {
           {/* Right Visual Card */}
           <div className="lg:col-span-7">
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg border border-black/10 h-[260px] sm:h-[300px] md:h-[330px] bg-slate-900 group">
-              <Image 
+              <Image
                 src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80"
                 alt="Scenic Meadow"
                 fill
                 className="object-cover opacity-85 group-hover:scale-105 transition-transform duration-700 ease-out"
                 sizes="(max-width: 1024px) 100vw, 55vw"
               />
-              
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/25"></div>
 
               {/* Exact Card 1 Mockup */}
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <div className="bg-white rounded-3xl p-5 shadow-[0_16px_40px_rgba(0,0,0,0.3)] w-full max-w-[310px] space-y-3 anim-float-card transition-all duration-300 hover:shadow-2xl">
-                  
+
                   {/* Title */}
                   <div className="text-sm font-black text-slate-900 tracking-tight">
                     Set your starting goal
@@ -223,7 +223,7 @@ export default function HowItWorks() {
           {/* Right Visual Card */}
           <div className="lg:col-span-7">
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg border border-black/10 h-[260px] sm:h-[300px] md:h-[330px] bg-slate-900 group">
-              <Image 
+              <Image
                 src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80"
                 alt="Scenic Mountain"
                 fill
@@ -236,12 +236,12 @@ export default function HowItWorks() {
               {/* Exact Image 2 Card Asset Floating in 3D */}
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <div className="relative w-[260px] sm:w-[285px] md:w-[305px] aspect-[509/519] anim-float-card filter drop-shadow-[0_16px_35px_rgba(0,0,0,0.4)] hover:scale-105 transition-all duration-300">
-                  <Image 
-                    src="/social-share-transparent.png" 
-                    alt="Ready to share" 
-                    fill 
-                    className="object-contain" 
-                    priority 
+                  <Image
+                    src="/social-share-transparent.png"
+                    alt="Ready to share"
+                    fill
+                    className="object-contain"
+                    priority
                   />
                 </div>
               </div>
@@ -267,7 +267,7 @@ export default function HowItWorks() {
           {/* Right Visual Card */}
           <div className="lg:col-span-7">
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg border border-black/10 h-[260px] sm:h-[300px] md:h-[330px] bg-slate-900 group">
-              <Image 
+              <Image
                 src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80"
                 alt="Scenic Nature"
                 fill
@@ -280,7 +280,7 @@ export default function HowItWorks() {
               {/* Exact Card 3 Mockup */}
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <div className="bg-white rounded-3xl p-5 shadow-[0_16px_40px_rgba(0,0,0,0.3)] w-full max-w-[310px] space-y-3 anim-float-card transition-all duration-300 hover:shadow-2xl">
-                  
+
                   {/* Header: Transfers + Daily Pencil */}
                   <div className="flex items-center justify-between">
                     <span className="font-black text-slate-900 text-sm">Transfers</span>
