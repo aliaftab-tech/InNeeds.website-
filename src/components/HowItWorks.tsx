@@ -10,10 +10,26 @@ import {
 
 export default function HowItWorks() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-[#f6f9f6] border-y border-[#e2eae3] relative overflow-hidden" id="how-it-works">
+    <section className="bg-[#f6f9f6] pb-12 sm:pb-16 md:pb-20 border-b border-[#e2eae3] relative overflow-hidden" id="how-it-works">
       
+      {/* ================= TOP DEEP DOME ARCH DIVIDER ================= */}
+      <div className="w-full overflow-hidden leading-none select-none pointer-events-none -mt-px">
+        <svg 
+          viewBox="0 0 1440 100" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg" 
+          className="w-full h-10 sm:h-16 md:h-20 lg:h-24 block" 
+          preserveAspectRatio="none"
+        >
+          {/* White cutout from upper section (corners tilt steeply downwards) */}
+          <path d="M 0,0 L 0,95 A 720 90 0 0 1 1440,95 L 1440,0 Z" fill="#ffffff" />
+          {/* Defined lightgrey dome arch border */}
+          <path d="M 0,95 A 720 90 0 0 1 1440,95" stroke="#e2eae3" strokeWidth="2" fill="none" />
+        </svg>
+      </div>
+
       {/* ================= HERO BANNER CONTAINER WITH RESPONSIVE SIDES BADGES ================= */}
-      <div className="relative max-w-5xl mx-auto px-12 sm:px-16 md:px-20 text-center z-10 pt-2 pb-4">
+      <div className="relative max-w-5xl mx-auto px-12 sm:px-16 md:px-20 text-center z-10 pt-2 sm:pt-4 md:pt-6 pb-4">
 
         {/* --- LEFT BADGES (VISIBLE ON MOBILE & DESKTOP) --- */}
 
